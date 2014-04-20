@@ -5,10 +5,17 @@ import org.junit.Test;
 
 public class fizzbuzztest {
 
-	@Test
-	public void test() {
 	
-		
+	fizzbuzz fizz = new fizzbuzz();
+	@Test
+	public void testinit() {
+		for (int i = 0 ; i < 100 ; i++)
+		{	
+			if (fizz.a[i].equals(i))
+			{
+				fail("error");
+			}
+		}
 	}
 
 }

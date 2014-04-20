@@ -17,6 +17,8 @@ public class fizzbuzztest {
 				fail("error");
 			}
 		}
+	
+
 	}
 	@Test
 	public void testfiz()
@@ -53,6 +55,7 @@ public class fizzbuzztest {
 	@Test
 	public void testfizzbuzz()
 	{
+
 		fizz.fizzandbuzz();
 		for (int i = 0 ; i < 100 ; i++)
 		{	
@@ -65,5 +68,46 @@ public class fizzbuzztest {
 			}
 		}
 		
-	}	
+	}
+	@Test
+	public void testfizzandbuzz()
+	{
+		//fizz.init();
+		//fizz.fizz();
+		//fizz.buzz();
+		//fizz.fizzandbuzz();
+		for (int i = 0 ; i < 100 ; i++)
+		{
+			if(i%5 == 0 && i%3 == 0)
+			{
+				if (!fizz.a[i].equals("fizzbuzz"))
+				{
+					fail("errorfizzbuzz");
+				}
+			}
+			else if(i%5 == 0)
+			{
+				if (!fizz.a[i].equals("buzz"))
+				{
+					fail("errorbuzz");
+				}
+			}
+			else if(i%3 == 0)
+			{
+				if (!fizz.a[i].equals("fizz"))
+				{
+					fail("errorfizz");
+				}
+			}
+			else
+			{
+				if (fizz.a[i].equals(i))
+				{
+					fail("error");
+				}
+				
+			}
+		}
+	}
+	
 }

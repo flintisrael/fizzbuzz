@@ -72,10 +72,10 @@ public class fizzbuzztest {
 	@Test
 	public void testfizzandbuzz()
 	{
-		//fizz.init();
-		//fizz.fizz();
-		//fizz.buzz();
-		//fizz.fizzandbuzz();
+		fizz.init();
+		fizz.fizz();
+		fizz.buzz();
+		fizz.fizzandbuzz();
 		for (int i = 0 ; i < 100 ; i++)
 		{
 			if(i%5 == 0 && i%3 == 0)

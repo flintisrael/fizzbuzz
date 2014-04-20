@@ -41,4 +41,16 @@ public class fizzbuzz {
 		
 		
 	}
+	public void fizzandbuzz()
+	{
+		
+		 for (int i = 0 ; i < a.length ; i++)
+		 {
+			 if(i%5 == 0 && i%3 == 0)
+			{
+			 a[i] = "fizzbuzz";
+			}
+		 }
+				
+	}
 }

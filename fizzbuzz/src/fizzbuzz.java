@@ -15,4 +15,17 @@ public class fizzbuzz {
 			 a[i] = Integer.toString(i);
 		 }
 	}
+	public void fizz()
+	{
+		
+		 for (int i = 0 ; i < a.length ; i++)
+		 {
+			 if(i%3 == 0)
+			{
+			 a[i] = "fizz";
+			}
+		 }
+		
+		
+	}
 }

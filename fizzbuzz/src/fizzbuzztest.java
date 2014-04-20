@@ -53,14 +53,14 @@ public class fizzbuzztest {
 	@Test
 	public void testfizzbuzz()
 	{
-		fizz.buzz();
+		fizz.fizzandbuzz();
 		for (int i = 0 ; i < 100 ; i++)
 		{	
 			if(i%5 == 0 && i%3 == 0)
 			{
 				if (!fizz.a[i].equals("fizzbuzz"))
 				{
-					fail("errorbuzz");
+					fail("errorfizzbuzz");
 				}
 			}
 		}

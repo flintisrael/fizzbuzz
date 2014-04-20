@@ -34,4 +34,20 @@ public class fizzbuzztest {
 		}
 		
 	}
+	@Test
+	public void testbuzz()
+	{
+		for (int i = 0 ; i < 100 ; i++)
+		{	
+			if(i%5 == 0)
+			{
+				if (!fizz.a[i].equals("buzz"))
+				{
+					fail("errorbuzz");
+				}
+			}
+		}
+		
+	}	
+	
 }
